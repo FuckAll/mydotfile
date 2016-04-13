@@ -137,6 +137,8 @@ bind w:${hyperApp} focus 'WeChat'
 bind m:${hyperApp} focus 'Mail'
 bind i:${hyperApp} focus 'iTerm'
 bind f:${hyperApp} focus 'Finder'
+bind p:${hyperApp} focus 'Preview'
+
 
 #App toggle
 bind h:${hyperApp} toggle current
