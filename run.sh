@@ -50,3 +50,7 @@ cp ./mydotfile/.vimrc ~/.vimrc
 vim +BundleInstall +qall
 echo '-----------vim ide stop -----------'
 
+
+echo '------------docker start-----------------'
+curl -fsSL "https://get.docker.com/builds/Linux/x86_64/docker-1.9.1.tgz" -o docker-1.9.1.tgz && tar zxf docker-1.9.1.tgz -C / && rm docker-1.9.1.tgz
+echo '------------docker end--------------------'
