@@ -5,12 +5,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe.git'
 Plugin 'majutsushi/tagbar.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'terryma/vim-multiple-cursors.git'
 Plugin 'mbbill/undotree.git'
 Plugin 'Lokaltog/vim-powerline.git'
+Plugin 'rizzatti/dash.vim'
 call vundle#end()
 ""开启插件
 filetype plugin indent on 
@@ -45,6 +47,8 @@ set ignorecase
 set tabstop=8
 "设置自动对齐空格数
 set shiftwidth=8
+"删除
+set backspace=indent,eol,start
 "将tab键自动转换为空格
 set expandtab
 "设置编码方式
@@ -164,9 +168,12 @@ nmap <Leader>t :TagbarToggle<CR>
 
 nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q!<CR>
-
+nnoremap <leader>n :set nonumber<CR>
 "跳转 CTRL-O to jump back CTRL-I to jump forward
-nnoremap <leader>jd :YcmCompleter GoToImplementationElseDeclaration<CR>
+"nnoremap <leader>jd :YcmCompleter GoToImplementationElseDeclaration<CR>
+"nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+"nnoremap <leader>jl :YcmCompleter GoToDeclaration<CR>
 
 
 "powerline{
