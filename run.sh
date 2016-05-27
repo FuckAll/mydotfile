@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+yum install git -y
+yum install go -y
+yum install vim -y
 
 echo '-----------mkdir start-----------'
 mkdir -p /Users/KongFu/BaseEnv/bin
@@ -47,6 +50,7 @@ echo '-----------go get end-----------'
 echo '-----------vim ide start-----------'
 git clone https://github.com/FuckAll/mydotfile.git
 cp ./mydotfile/.vimrc ~/.vimrc
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/Vundle.vim
 vim +BundleInstall +qall
 echo '-----------vim ide stop -----------'
 
