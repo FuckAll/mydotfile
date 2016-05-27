@@ -5,7 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerline"
+#ZSH_THEME="powerline"
+ZSH_THEME="robbyrussell"
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -86,11 +87,10 @@ source $ZSH/oh-my-zsh.sh
 
 # 路径别名 {{{
 #hash -d WWW="/srv/http/" # use http instead
-hash -d dt="/Users/kongfu/duitang/"
-hash -d code="/Users/kongfu/duitang/git/"
-hash -d datacenter="/Users/kongfu/duitang/git/datacenter/"
-hash -d faba="/Users/kongfu/duitang/git/faba/"
-hash -d my="/Users/kongfu/duitang/KongFu"
+#hash -d code="/Users/kongfu/duitang/git/"
+#hash -d datacenter="/Users/kongfu/duitang/git/datacenter/"
+#hash -d faba="/Users/kongfu/duitang/git/faba/"
+#hash -d my="/Users/kongfu/duitang/KongFu"
 # }}}
 #LANG
 LANG="en_US.UTF-8"
@@ -102,7 +102,7 @@ LC_NUMERIC="zh_CN.UTF-8"
 LC_TIME="zh_CN.UTF-8"
 LC_ALL="zh_CN.UTF-8"
 ###########Sublime Text 2##########
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+#alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias nano="subl"
 alias gst="git status"
 alias gpl="git pull"
@@ -118,16 +118,15 @@ alias s200='ssh -A 10.1.2.200'
 alias s181='ssh -A 10.1.1.181'
 
 
-alias m='tldr'
-alias pythonenv='source /Users/kongfu/duitang/git/pythonenv/bin/activate'
-alias jumpenv='source /Users/kongfu/duitang/git/jumpenv/bin/activate'
+#alias pythonenv='source /Users/kongfu/duitang/git/pythonenv/bin/activate'
+#alias jumpenv='source /Users/kongfu/duitang/git/jumpenv/bin/activate'
 set -o vi 
 ssh-add /Users/KongFu/.ssh/id_rsa
 source /Users/kongfu/duitang/git/pythonenv/bin/activate
 #export EDITOR="subl"
 export GOPATH=/Users/KongFu/BaseEnv/:/Users/KongFu/17mei/
-export GOBIN=/Users/KongFu/BaseEnv/bin/
-#export GOROOT=/Users/KongFu/17mei/:/Users/KongFu/BaseEnv/
+export GOBIN=/Users/KongFu/BaseEnv/bin
+#export GOROOT=/Users/KongFu/17mei/:/Users/KongFu/BaseEnv
 alias de='docker exec -t -i'
 alias ds='docker start'
 alias dstop='docker stop'
