@@ -45,7 +45,7 @@ echo '-----------go get end-----------'
 
 
 echo '-----------vim ide start-----------'
-git clone git@github.com:FuckAll/mydotfile.git 
+git clone https://github.com/FuckAll/mydotfile.git
 cp ./mydotfile/.vimrc ~/.vimrc
 vim +BundleInstall +qall
 echo '-----------vim ide stop -----------'
